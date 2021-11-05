@@ -16,4 +16,4 @@ thunk allows you to call the action creators that return a think function which 
 
 4. What is your favorite state management system you've learned and this sprint? Please explain why!
 
-I have enjoyed using the contect API method because it is similar to what we have learned before with managing state. I do intend on mastering Redux for the exponentially larger projects that are meant to have multiple levels of state. 
+I have enjoyed using the context API method because it is similar to what we have learned before with managing state. I do intend on mastering Redux for the exponentially larger projects that are meant to have multiple levels of state. 
