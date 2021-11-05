@@ -15,9 +15,9 @@ You are not allowed to collaborate during the sprint challenge.
 In this challenge, you are to build a Smurfs village database utilizing Redux as your state management system. Build this challenge from the ground up using what you have learned about state management.
 
 ## Project Setup
-* [ ] Run npm install to install your dependencies.
-* [ ] Run npm start to run your frontend and backend code automatically.
-* [ ] Note your backend code will run automatically when your run npm start. There is no need to seperately run a server.js file and no means to test the server through postman or the browser. Feel free to ignore any messages related to MSW or mock service workers.
+* [ x ] Run npm install to install your dependencies.
+* [ x ] Run npm start to run your frontend and backend code automatically.
+* [ x ] Note your backend code will run automatically when your run npm start. There is no need to seperately run a server.js file and no means to test the server through postman or the browser. Feel free to ignore any messages related to MSW or mock service workers.
 
 ## Project Instructions
 
@@ -46,17 +46,17 @@ In this project, you will build the reducer, actions and basic redux connects ne
 #### Complete reducers/index.js
   Add in the needed state and reducer cases to hold and modify smurf error messages, loading status and smurf data. **If at all possible, add in action cases one at a time, instead of all at once. Test your state connects and reducer cases as nessisary.**
 
-  * [ ] Adds the following state values into the initialState:
+  * [ x ] Adds the following state values into the initialState:
       - an array of smurfs
       - a boolean indicating if the app is loading
       - a string indicating a possible error message
 
-  * [ ] Add in the arguments needed to complete a standard reducer function.
-  * [ ] Add in a reducer case to accommodate the start of a smurf fetch.
-  * [ ] Add in a reducer case to accommodate the successful smurf api fetch.
-  * [ ] Add in a reducer cases to accommodate an error.
-  * [ ] Add in a reducer case to accommodate adding a smurf (including the name, nickname, position, description and an internally generated id) into your smurf list.
-  * [ ] Add in a reducer case that adds in a value to the error message.
+  * [ x ] Add in the arguments needed to complete a standard reducer function.
+  * [ x ] Add in a reducer case to accommodate the start of a smurf fetch.
+  * [ x ] Add in a reducer case to accommodate the successful smurf api fetch.
+  * [ x ] Add in a reducer cases to accommodate an error.
+  * [ x ] Add in a reducer case to accommodate adding a smurf (including the name, nickname, position, description and an internally generated id) into your smurf list.
+  * [ x ] Add in a reducer case that adds in a value to the error message.
 
 ### Complete index.js
   Connect your application to reducer through redux with the thunk and logger middleware packages attached.
@@ -64,30 +64,30 @@ In this project, you will build the reducer, actions and basic redux connects ne
 ### Complete actions/index.js
   Add in the action creators and action constants needed to add a smurf to state and fetch smurfs from the server. **If at all possible, add in action cases one at a time, instead of all at once. Test your state connects and reducer cases as nessisary.**
 
-  * [ ] Add a thunk action called fetchSmurfs that triggers a loading status display in our application, performs an axios call to retreive all smurfs from the api. Save the result of to our state and show an error if one is made.
-  * [ ] Add a standard action that allows us to add new smurf (including the name, nickname, position, summary).
-  * [ ] Add a standard action that allows us to set the value of the error message slice of state.
+  * [ x ] Add a thunk action called fetchSmurfs that triggers a loading status display in our application, performs an axios call to retreive all smurfs from the api. Save the result of to our state and show an error if one is made.
+  * [ x ] Add a standard action that allows us to add new smurf (including the name, nickname, position, summary).
+  * [ x ] Add a standard action that allows us to set the value of the error message slice of state.
   
 ### Complete App.js
   Connect component to the fetchSmurfs action.
   
-  * [ ] Connect the fetchSmurfs actions to the App component.
-  * [ ] Call the fetchSmurfs action when the component first loads.
+  * [ x ] Connect the fetchSmurfs actions to the App component.
+  * [ x ] Call the fetchSmurfs action when the component first loads.
 
 ### Complete components/SmurfList.js
   Connect this component to your smurfs and loading screen state slices.
   
-  * [ ] Connect the smurfs and loading state values to the SmurfList component.
-  * [ ] Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list.
-  * [ ] Replace the static isLoading variable with the state loading variable.
+  * [ x ] Connect the smurfs and loading state values to the SmurfList component.
+  * [ x ] Replace the single Smurf component instance with a map return a Smurf component for each entry in the smurfs list.
+  * [ x ] Replace the static isLoading variable with the state loading variable.
 
 ### Complete components/AddForm.js
   Connect this component to the error state slice, setError and addSmurf actions. Complete the form handling code.
 
-  * [ ] Connect your error state slice, setError and addSmurf actions to the AddForm component.
-  * [ ] Replace all instances of the errorMessage static variable with your error message state slice. 
-  * [ ] Within the handleSubmit function, replace the static assignment to errorMessage with a call to the setError action. Test that an error is displayed when validation code fails.
-  * [ ] Within the handleSubmit function, call your addSmurf action with the smurf name, position, nickname and summury passed as arguments. Test that a smurf is correctly added to when the form is submitted.
+  * [ x ] Connect your error state slice, setError and addSmurf actions to the AddForm component.
+  * [ x ] Replace all instances of the errorMessage static variable with your error message state slice. 
+  * [ x ] Within the handleSubmit function, replace the static assignment to errorMessage with a call to the setError action. Test that an error is displayed when validation code fails.
+  * [ x ] Within the handleSubmit function, call your addSmurf action with the smurf name, position, nickname and summury passed as arguments. Test that a smurf is correctly added to when the form is submitted.
 
 ## Important Notes:
 
