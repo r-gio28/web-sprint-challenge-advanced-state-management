@@ -6,7 +6,7 @@ import {fetchSmurfs} from '../actions';
  const SmurfList = (props)=> {
     useEffect(() => {
         props.fetchSmurfs();
-    }, []);
+    },[]);
 
     return(<div className="listContainer">
         {props.smurfs.map(smurf => <Smurf smurf={smurf} key={smurf.id}/>)}

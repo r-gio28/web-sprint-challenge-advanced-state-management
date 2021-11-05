@@ -25,7 +25,7 @@ export const fetchSmurfs = () => {
                      payload:err.message})
             })
     }
-}
+};
 
 
 
