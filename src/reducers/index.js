@@ -1,4 +1,4 @@
-
+import { START_FETCH, FETCH_SUCCESS, ERROR, ADD_SMURF, SET_ERROR } from "../actions/index";
 const initialState = {
     smurfs: [],
     loading: false,
